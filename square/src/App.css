@@ -1,0 +1,15 @@
+:root {
+  --sqr_width: 10px;
+  --sqr_color: #000000;
+  --margin-left: 0px;
+  --margin-top: 0px;
+}
+
+.square {
+  width: var(--sqr_width);
+  height: var(--sqr_width);
+  background-color: var(--sqr_color);
+  display: block;
+  margin-left: var(--margin-left);
+  margin-top: var(--margin-top);
+}
