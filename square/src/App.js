@@ -15,6 +15,14 @@ var width = window.innerWidth;
 var sqr_size = Math.floor(Math.random() * height);
 var top_margin = Math.floor(Math.random() * (height - sqr_size));
 
+function Scorch() {
+  return(
+    <div>
+      <img src="./scorch.jpg" alt="scorch" className="scorch" />
+    </div>
+  )
+}
+
 function Square() {
   // REF: document.documentElement.style.setProperty('--text', `'${time}'`);
   // var h = window.innerHeight;
@@ -31,7 +39,7 @@ function Square() {
   document.documentElement.style.setProperty('--sqr_color', `${getRandomColor()}`);
   return(
     <div className="square">
-
+      <Scorch />
     </div>
   );
 }
