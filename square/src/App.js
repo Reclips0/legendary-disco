@@ -20,6 +20,24 @@ function Reactor() {
   const [count, setCount] = useState(0);
   function handleClick() {
     setCount(count + 1);
+    if (count === 5) {
+      alert("Stop.");
+    }
+    if (count === 10) {
+      alert("Please stop.");
+    }
+    if (count === 15) {
+      alert("Think of the lives that will be lost");
+    }
+    if (count === 20) {
+      alert("Think of all the macaroni facts you could learn");
+    }
+    if (count === 23) {
+      alert("Do not go further");
+    }
+    if (count ===30) {
+      alert("Please just stop touching me");
+    }
   }
   if (count >= 25) {
     Explode();
@@ -36,7 +54,7 @@ function Explode() {
 
 function Explosion() {
   return (
-    <img className="exploding-div" src="explosion.gif" alt="cool nuclear explosion"></img>
+    <img className="exploding-div" src="https://reclips0.github.io/legendary-disco/explosion.gif" alt="cool nuclear explosion"></img>
   )
 }
 
