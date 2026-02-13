@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from "react"
 
 function getRandomColor() {
   // random color generator
@@ -15,11 +16,27 @@ var width = window.innerWidth;
 var sqr_size = Math.floor(Math.random() * height);
 var top_margin = Math.floor(Math.random() * (height - sqr_size));
 
-function Scorch() {
-  return(
-    <div>
-      <img src="./scorch.jpg" alt="scorch" className="scorch" />
-    </div>
+function Reactor() {
+  const [count, setCount] = useState(0);
+  function handleClick() {
+    setCount(count + 1);
+  }
+  if (count >= 25) {
+    Explode();
+  }
+  return (
+    <button onClick={handleClick} className="scorch">
+    </button>
+  );
+}
+
+function Explode() {
+  document.documentElement.style.setProperty('--explosion', 'block');
+}
+
+function Explosion() {
+  return (
+    <img className="exploding-div" src="explosion.gif" alt="cool nuclear explosion"></img>
   )
 }
 
@@ -39,7 +56,7 @@ function Square() {
   document.documentElement.style.setProperty('--sqr_color', `${getRandomColor()}`);
   return(
     <div className="square">
-      <Scorch />
+      <Reactor />
     </div>
   );
 }
@@ -67,6 +84,7 @@ function Macaroni() {
 function App() {
   return (
     <div>
+      <Explosion />
       <Square />
       <Macaroni />
     </div>
