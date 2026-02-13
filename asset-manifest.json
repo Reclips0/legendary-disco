@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/legendary-disco/static/css/main.ecf0b095.css",
+    "main.js": "/legendary-disco/static/js/main.ae75fb15.js",
+    "static/js/453.8d7acfc2.chunk.js": "/legendary-disco/static/js/453.8d7acfc2.chunk.js",
+    "static/media/reactor.jpg": "/legendary-disco/static/media/reactor.312cc80694b5a322313f.jpg",
+    "index.html": "/legendary-disco/index.html",
+    "main.ecf0b095.css.map": "/legendary-disco/static/css/main.ecf0b095.css.map",
+    "main.ae75fb15.js.map": "/legendary-disco/static/js/main.ae75fb15.js.map",
+    "453.8d7acfc2.chunk.js.map": "/legendary-disco/static/js/453.8d7acfc2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecf0b095.css",
+    "static/js/main.ae75fb15.js"
+  ]
+}
