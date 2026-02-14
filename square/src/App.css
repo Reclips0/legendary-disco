@@ -1,3 +1,9 @@
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --sqr_width: 10px;
   --sqr_color: #000000;
@@ -5,6 +11,31 @@
   --margin-top: 0px;
   --mac-top: 0px;
   --explosion: none;
+}
+
+html, body, #root { height: 100% }
+
+.left-box {
+  flex: 0 0 65%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.right-box {
+  flex: 0 0 35%;
+  height: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  background-color: hsl(211, 100%, 84%);
+  box-sizing: border-box;
+}
+
+.App {
+  display: flex;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
@@ -17,10 +48,10 @@
 
 .exploding-div {
   display: var(--explosion);
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 17;
+  z-index: 999;
   width: 100%;
   height: 100%;
 }
@@ -42,6 +73,45 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.mac-clicker-image {
+  width: 75%;
+  aspect-ratio: 1 / 1;
+  margin-left: 11%;
+  margin-top: 10%;
+  background-image: url("./macaroni.webp");
+  background-size: cover;
+  background-position: center;
+  animation: shift-both 5s ease-in-out infinite;
+}
+
+.mac-clicker-upgrade {
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.mac-clicker-first-upgrade {
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 30px;
+  margin-top: 75px;
+}
+
+@keyframes shift-both {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
   }
 }
 

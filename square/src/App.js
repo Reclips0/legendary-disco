@@ -1,5 +1,6 @@
 import './App.css';
-import { useState } from "react"
+import { useState } from "react";
+import { useEffect } from 'react';
 
 function getRandomColor() {
   // random color generator
@@ -79,6 +80,54 @@ function Square() {
   );
 }
 
+function Clicker() {
+  const [count, setCount] = useState(0);
+  const [mps, setMps] = useState(0);
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCount(prevCount => prevCount + mps);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [mps]);
+  
+  function Click() {
+    setCount(count + 1);
+  }
+  
+  function Box() {
+    if (count >= 45) {
+      setCount(count - 45);
+      setMps(mps + 1);
+    }
+  }
+  
+  function Microwave() {
+    if (count >= 150) {
+      setCount(count - 150);
+      setMps(mps + 4);
+    }
+  }
+  
+  function Stove() {
+    if (count >= 1500) {
+      setCount(count - 1500);
+      setMps(mps + 20);
+    }
+  }
+  
+  return (
+    <div>
+      <h1 className="bungee-regular">Macaroni Clicker</h1>
+      <p>{count} macaroni</p>
+      <button className="mac-clicker-image" onClick={Click}></button>
+      <button className="mac-clicker-first-upgrade" onClick={Box}>Cheap Box | 45 macaroni | 1mps</button>
+      <button className="mac-clicker-upgrade" onClick={Microwave}>Microwave | 150 macaroni | 12mps</button>
+      <button className="mac-clicker-upgrade" onClick={Stove}>Stove | 1500 macaroni | 150 mps</button>
+    </div>
+  );
+}
+
 function Macaroni() {
   var im_going_insane = sqr_size;
   document.documentElement.style.setProperty('--mac_top', `${im_going_insane}px`);
@@ -103,8 +152,15 @@ function App() {
   return (
     <div>
       <Explosion />
-      <Square />
-      <Macaroni />
+      <div className="App">
+        <div className="left-box">
+          <Square />
+          <Macaroni />
+        </div>
+        <div className="right-box">
+          <Clicker />
+        </div>
+      </div>
     </div>
   );
 }
