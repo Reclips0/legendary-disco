@@ -118,12 +118,12 @@ function Clicker() {
   
   return (
     <div>
-      <h1 className="bungee-regular">Macaroni Clicker</h1>
-      <p>{count} macaroni</p>
+      <h1 className="bungee-macaroni">Macaroni Clicker</h1>
+      <p className="bungee-macaroni">{count} macaroni</p>
       <button className="mac-clicker-image" onClick={Click}></button>
       <button className="mac-clicker-first-upgrade" onClick={Box}>Cheap Box | 45 macaroni | 1mps</button>
       <button className="mac-clicker-upgrade" onClick={Microwave}>Microwave | 150 macaroni | 12mps</button>
-      <button className="mac-clicker-upgrade" onClick={Stove}>Stove | 1500 macaroni | 150 mps</button>
+      <button className="mac-clicker-last-upgrade" onClick={Stove}>Stove | 1500 macaroni | 150 mps</button>
     </div>
   );
 }

@@ -30,6 +30,7 @@ html, body, #root { height: 100% }
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
+  border-radius: 50px 0px 0px 50px;
   background-color: hsl(211, 100%, 84%);
   box-sizing: border-box;
 }
@@ -44,6 +45,14 @@ html, body, #root { height: 100% }
   font-family: "Bungee", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+.bungee-macaroni {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .exploding-div {
@@ -101,6 +110,15 @@ html, body, #root { height: 100% }
   margin-left: 5%;
   font-size: 30px;
   margin-top: 75px;
+}
+
+.mac-clicker-last-upgrade {
+  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 @keyframes shift-both {
