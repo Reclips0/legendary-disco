@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/legendary-disco/static/css/main.10040827.css",
-    "main.js": "/legendary-disco/static/js/main.f337f93d.js",
+    "main.css": "/legendary-disco/static/css/main.6f2a5f4d.css",
+    "main.js": "/legendary-disco/static/js/main.7cffaff0.js",
     "static/js/453.8d7acfc2.chunk.js": "/legendary-disco/static/js/453.8d7acfc2.chunk.js",
     "static/media/macaroni.webp": "/legendary-disco/static/media/macaroni.cb0e4d55564bdb999919.webp",
     "static/media/reactor.jpg": "/legendary-disco/static/media/reactor.312cc80694b5a322313f.jpg",
     "index.html": "/legendary-disco/index.html",
-    "main.10040827.css.map": "/legendary-disco/static/css/main.10040827.css.map",
-    "main.f337f93d.js.map": "/legendary-disco/static/js/main.f337f93d.js.map",
+    "main.6f2a5f4d.css.map": "/legendary-disco/static/css/main.6f2a5f4d.css.map",
+    "main.7cffaff0.js.map": "/legendary-disco/static/js/main.7cffaff0.js.map",
     "453.8d7acfc2.chunk.js.map": "/legendary-disco/static/js/453.8d7acfc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10040827.css",
-    "static/js/main.f337f93d.js"
+    "static/css/main.6f2a5f4d.css",
+    "static/js/main.7cffaff0.js"
   ]
 }
