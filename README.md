@@ -1,4 +1,4 @@
-# legendary-disco (v4.1)
+# legendary-disco (v5.0)
 I took website requests from people.
 I am now putting every single website into one website because I use react and with react you can just do that
 ## current requests
@@ -10,3 +10,5 @@ I don't plan on using any AI for the code because I actually want to learn this 
 if the reactor is clicked 25 times then the page blows up. Please, do not click the nuclear reactor I actually really love this website
 ### Me: Macaroni Clicker
 It's cookie clicker but with macaroni. You will bake macaroni. You will eat the macaroni. You will macaroni until you die to a nuclear reactor explosion
+### Jackson: Kanye clicker, accessible through a weekly vote
+i didn't want to do this but oh well.

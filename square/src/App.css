@@ -57,7 +57,7 @@ html, body, #root { height: 100% }
 
 .exploding-div {
   display: var(--explosion);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;

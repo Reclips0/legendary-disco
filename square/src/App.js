@@ -118,6 +118,8 @@ function Clicker() {
   
   return (
     <div>
+      <br />
+      <p>Vote <a href="https://docs.google.com/forms/d/e/1FAIpQLSejJF82IOLzgwCKlxaEoyxn7u3xbEKmJROfrsUYOF1B4zAOMA/viewform?usp=publish-editor">here</a> if you want to replace macaroni clicker with kanye clicker, vote ends Feb. 22</p>
       <h1 className="bungee-macaroni">Macaroni Clicker</h1>
       <p className="bungee-macaroni">{count} macaroni</p>
       <button className="mac-clicker-image" onClick={Click}></button>
